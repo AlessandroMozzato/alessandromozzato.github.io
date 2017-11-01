@@ -1,9 +1,43 @@
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: right;
+  width: 80%;
+}
+aside {
+  float: left;
+  width: 10%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+
+code {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+
 body {
-    background-color: powderblue;
+    background-color: #80b3ff;
 }
 h1 {
-    color: blue;
+    color: #000000;
+    font-family: Courier;
+    font-size: 200%;
 }
-p {
-    color: red;
+p  {
+    color: #001f4d;
+    font-family: courier;
+    font-size: 100%;
+    border: 1px solid #80b3ff;
 }
