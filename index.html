@@ -2,6 +2,10 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+ 	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+ </head>
+
 </head>
 <body>
 
@@ -10,11 +14,38 @@
 </aside>
 
 <section>
-	<h1>This is Alessandro Mozzato's personal website</h1>
+	<h1>This is my personal webpage</h1>
 	<p><a href="research.html">Research</a></p>
 	<p><a href="CV_html/index.html">Vitae</a></p>
+	<p><a href="myd3project/index.html">D3play</a></p>
 	<p>Projects</p>
 </section>
 
+<section>
+    <script src="https://d3js.org/d3.v4.min.js"charset="utf-8"></script>
+    <script>
+	    // Our code
+	    var nums = [80, 53, 125, 200, 28, 97];
+
+	    var svg = d3.select('body').append('svg')
+	      .attr('height', 200)
+	      .attr('width', 200);
+
+	    var bars = svg.selectAll('rect')
+	      .data(nums);
+
+	    bars.enter().append('rect');
+	    
+		var bars = d3.selectAll('rect')
+		    .attr('width', 20)
+		    .attr('height', 20);
+
+		bars.attr('x', function(d, i) {
+  		return 30*i;
+		});
+
+		
+	</script> 
+</section>
 </body>
 </html>
