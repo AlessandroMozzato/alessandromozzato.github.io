@@ -10,7 +10,7 @@
 			"default_item":false
 		},
 		{
-			"type":"Trainee",
+			"type":"Work",
 			"institution":"Seocond job institution",
 			"title":"The jon title!",
 			"from":"2006-05-01",

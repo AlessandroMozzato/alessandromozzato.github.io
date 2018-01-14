@@ -9,10 +9,38 @@
 <body>
   <div class="container">
     <h2>My GRAPHIC</h2>
-    <div id="chart"></div>
   </div>
-  <script src="https://d3js.org/d3.v3.min.js"></script>
-  <script src="https://rawgithub.com/glena/d3-resume/master/d3resume.min.js"></script>
-  <script src="cv.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="https://rawgithub.com/glena/d3-resume/master/d3resume.min.js"></script>
+  <div id="experience"></div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+        var height = $(window).height();
+        var width = $(window).width();
+        var svgHeight = 700;
+        var container = $('#experience');
+
+        if (width < 900) width = 900;
+
+        container
+            .css('left', function(e){
+              return (-1 * (width - container.parent().width()) / 2) + 'px';
+            });
+
+        var resume = new d3Resume({
+          width: width,
+          height: svgHeight,
+          wrapperSelector: "#experience",
+          dataUrl: 'exps.json',
+          getItemFillCollor: function (item) {
+            return '#' + (function co(lor){   return (lor +=
+            [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
+            && (lor.length == 6) ?  lor : co(lor); })('');
+          }
+        });
+  });
+  </script>
 </body>
 </html>

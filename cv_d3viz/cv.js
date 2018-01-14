@@ -1,7 +1,7 @@
 var resume = new d3Resume({
   width: 900,
   height: 900,
-  /* wrapperSelector: "article.resume", */
+  wrapperSelector: "article.resume",
   dataUrl: 'exps.json',
   getItemFillCollor: function (item) {
     return '#' + (function co(lor){   return (lor +=
