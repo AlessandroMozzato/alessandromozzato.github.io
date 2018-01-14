@@ -1,0 +1,33 @@
+{
+	"experience":[
+		{
+			"type":"Work",
+			"institution":"aaa",
+			"title":"title",
+			"from":"2006-05-01",
+			"to":"2006-09-30",
+			"description":"ale ale",
+			"default_item":false
+		},
+	],
+	"study":[
+		{
+			"type":"Study",
+			"institution":"pd",
+			"title":"mate",
+			"from":"2007-03-01",
+			"to":"2011-12-20",
+			"description":"",
+			"default_item":false
+		},
+		{
+			"type":"Study",
+			"institution":"pd",
+			"title":"pd",
+			"from":"2013-08-30",
+			"to":"2013-11-22",
+			"description":"",
+			"default_item":false
+		}
+	]
+}
