@@ -30,27 +30,79 @@
 			padding-bottom: 70px;
 		}
 
+		.navbar {
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border: 0;
+		    border-radius: 0;
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    letter-spacing: 5px;
+		}
+
+		.navbar-nav li a:hover {
+		    color: #1abc9c !important;
+		}
 	</style>
 </head>
 
 <body>
 
+<!-- This is the navigation bar -->
+ <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<!-- This is the first part, with the picture and name-->
 <div class="container-fluid bg-1 text-center">
 	<h3>Alessandro Mozzato</h3>
 	<img src="profile.jpeg" class="img-responsive img-circle" style="display:inline" alt="My profile pic">
 	<h3>Data Scientist</h3>
 </div>
 
+<!-- Second one with the links -->
 <div class="container-fluid bg-2 text-center">
 	<h3>Vitae</h3>
 	<p><a href="research.html">Research</a></p>
 	<p><a href="CV_html/index.html">Vitae</a></p>
 	<p><a href="cv_d3viz/index.html">Visual CV</a></p>
 	<p><a href="myd3project/index.html">D3play</a></p>
+	<a href="#" class="btn btn-default btn-lg">Search</a>
+
 </div>
 
+<!-- Third one with my projects -->
 <div class="container-fluid bg-3 text-center">
   <h3>Projects</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Project 1</p>
+      <img src="birds1.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Project 2</p>
+      <img src="birds1.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Project 3</p>
+	  <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Image">    </div>
+  </div>
 </div>
 
 </body>
