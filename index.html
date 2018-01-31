@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Alessandro Mozzato webpage</title>
+	<title>Alessandro's webpage</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 
 	<style>
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 20px "Arvo";
+		    line-height: 1.8;
+		    color: #f5f6f7;
+		}
+
+		p {
+			font-size: 16px;		
+		}
+
 		.bg-1 {
-			background-color: #1abc9c;
+			background-color: #87bdd8; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
 			color: #ffffff;
 		}
 
@@ -25,13 +37,18 @@
            	color: #555555;
 		}
 
+		.bg-4 {
+	    	background-color: #2f2f2f; /* black */
+	    	color: #ffffff;
+		}
+
 		.container-fluid {
 			padding-top: 70px;
 			padding-bottom: 70px;
 		}
 
 		.navbar {
-		    padding-top: 15px;
+		    padding-top: 15px;	
 		    padding-bottom: 15px;
 		    border: 0;
 		    border-radius: 0;
@@ -46,6 +63,10 @@
 	</style>
 </head>
 
+	<!-- CODE FOR THE BUTTON
+	<a href="#" class="btn btn-default btn-lg">Search</a>
+	-->
+
 <body>
 
 <!-- This is the navigation bar -->
@@ -57,38 +78,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">ME</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#bg1">WHO</a></li>
+        <li><a href="#bg2">VITAE</a></li>
+        <li><a href="#bg3">PROJECTS</a></li>
+        <li><a href="#bg4">CONTACTS</a></li>
       </ul>
     </div>
   </div>
 </nav> 
 
 <!-- This is the first part, with the picture and name-->
-<div class="container-fluid bg-1 text-center">
+<div class="container-fluid bg-1 text-center" id="bg1">
 	<h3>Alessandro Mozzato</h3>
 	<img src="profile.jpeg" class="img-responsive img-circle" style="display:inline" alt="My profile pic">
 	<h3>Data Scientist</h3>
 </div>
 
 <!-- Second one with the links -->
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg-2 text-center" id="bg2">
 	<h3>Vitae</h3>
 	<p><a href="research.html">Research</a></p>
 	<p><a href="CV_html/index.html">Vitae</a></p>
 	<p><a href="cv_d3viz/index.html">Visual CV</a></p>
 	<p><a href="myd3project/index.html">D3play</a></p>
-	<a href="#" class="btn btn-default btn-lg">Search</a>
 
 </div>
 
 <!-- Third one with my projects -->
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid bg-3 text-center" id="bg3">
   <h3>Projects</h3>
   <div class="row">
     <div class="col-sm-4">
@@ -104,6 +125,13 @@
 	  <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Image">    </div>
   </div>
 </div>
+
+<!-- This is the footer -->
+<footer class="container-fluid bg-4 text-center" id="bg4">
+	<p>Contacts: <a href="https://github.com/AlessandroMozzato">Github</a>, <a href="https://www.linkedin.com/in/alessandromozzato/">Linkedin</a>, <a href="mailto:mozatoale@gmail.com">Gmail</a></p>
+
+	<p>Bootstrap Theme modified from <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer> 
 
 </body>
 </html> 

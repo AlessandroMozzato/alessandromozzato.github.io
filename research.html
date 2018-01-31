@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+	<title>Alessandro's Research</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 
-<h1>My research interests cover</h1>
-<p>Landslides</p>
-<p>Ocean models</p>
+	<style>
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 20px "Arvo";
+		    line-height: 1.8;
+		    color: #f5f6f7;
+		}
+
+		p {
+			font-size: 16px;		
+		}
+
+		.bg-1 {
+			background-color: #87bdd8; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #ffffff;
+		}
+
+		.bg-2 {
+		    background-color: #474e5d; /* Dark Blue */
+		    color: #ffffff;
+		}
+		
+		.bg-3 {
+	        background-color: #ffffff; /* White */
+           	color: #555555;
+		}
+
+		.bg-4 {
+	    	background-color: #2f2f2f; /* black */
+	    	color: #ffffff;
+		}
+
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+		.navbar {
+		    padding-top: 15px;	
+		    padding-bottom: 15px;
+		    border: 0;
+		    border-radius: 0;
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    letter-spacing: 5px;
+		}
+
+		.navbar-nav li a:hover {
+		    color: #1abc9c !important;
+		}
+	</style>
+</head>
+
+<!-- This is the first part, with the picture and name-->
+<div class="container-fluid bg-1 text-center" id="bg1">
+	<h3>My research interests cover</h3>
+	<p>Landslides</p>
+	<p>Ocean models</p>
+</div>
 
 </body>
 </html>
