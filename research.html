@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
@@ -19,26 +20,29 @@
 		}
 
 		p {
-			font-size: 16px;		
+			font: 14px "Roboto";
+			text-align: justify;
+			margin-left: 25%;
+			margin-right: 25%;
 		}
 
 		.bg-1 {
-			background-color: #87bdd8; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
-			color: #ffffff;
+			background-color: #a2b9bc; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #555555;
 		}
 
 		.bg-2 {
-		    background-color: #474e5d; /* Dark Blue */
-		    color: #ffffff;
+		    background-color: #b2ad7f; /* Dark Blue */
+		    color: #555555;
 		}
 		
 		.bg-3 {
-	        background-color: #ffffff; /* White */
-           	color: #555555;
+	        background-color: #878f99; /* White */
+           	color: #ffffff;
 		}
 
 		.bg-4 {
-	    	background-color: #2f2f2f; /* black */
+	    	background-color: #6b5b95; /* black */
 	    	color: #ffffff;
 		}
 
@@ -60,18 +64,43 @@
 		.navbar-nav li a:hover {
 		    color: #1abc9c !important;
 		}
+
 	</style>
 </head>
 
 <!-- This is the first part, with the picture and name-->
 <div class="container-fluid bg-1 text-center" id="bg1">
-	<h3>My research interests cover</h3>
-	<h4>Landslides</h4>
-	<p>Perturbation</p>
-	<img src="animation_pres_pert_circ.gif" class="img-responsive" style="width:50%" alt="Image">    
-	<p>Sea level</p>
-	<img src="animation_eta_pert_circ.gif" class="img-responsive" style="width:50%" alt="Image">
+	<h1>My research</h1>
+	<h3>Submarine Landslides</h3>
+	<p>
+		Submarine landslides are some of the biggest geological events observed on the surface of Earth. They can be orders of magnitude greater than subaerial landslides and can generate disastrous tsunamis.
+	</p>
+
+	<h3>Submarine Landslides and their effect on climate</h3>
+		
+	<p>
+		During my PhD I developed a novel technique to simulate the spreading of submarine landslides in the ocean and their effect on the ocean circulation. This was done using the <a href="http://mitgcm.org/">MITgcm</a> general circulation model. My personal github repository contains a suite of <a href="https://github.com/AlessandroMozzato/python_functions">python scripts</a> for the analysis of the results as well as a collection of <a href="https://github.com/AlessandroMozzato/notebooks">notebooks</a> with my analysis.
+	</p>
+</div>
+
+
+<div class="container-fluid bg-2 text-center" id="bg2">
+	<h3>Modelling submarine landslides</h3>
+	<p>
+		Here are some results of the simulation on submarine landslide. These simulation model the Storegga Slide, the biggest landslide mapped on the surface of Earth. This slide failed 8000 years ago offshore the coast of Norway. It ganerated a major tsunami whose traces have been mapped all over the North Atlantic.
+	</p>
+	<h4>Perturbation</h4>
+	<img src="animation_pres_pert_circ.gif" class="img-responsive" style="width:50%; display:inline" alt="Image">    
+	<p>
+		When the slide is released it spread all over the Nordic Seas, and made its way in the Arctic infillin part of the Arctic Ocean abyssal plane.
+	</p>
+	<h4>Sea level</h4>
+	<img src="animation_eta_pert_circ.gif" class="img-responsive" style="width:50%; display:inline"  alt="Image">
 	<p>Ocean models</p>
+</div>
+
+<div class="container-fluid bg-3 text-center" id="bg3">
+	<h3>Submarine landslide and tsunamis</h3>
 </div>
 
 </body>
