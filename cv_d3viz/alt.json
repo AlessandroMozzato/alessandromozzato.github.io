@@ -66,8 +66,7 @@
 			"to":"2017-11-03",
 			"description":"Development of state-of-the-art, high-resolution global circulation models to study the impact of large submarine landslides on the ocean circulation, particularly in the Arctic Ocean.",
 			"default_item":false
-		}
-
+		},
 		{
 			"type":"Study",
 			"institution":"Machine Learning",
@@ -76,8 +75,7 @@
 			"to":"2016-06-01",
 			"description":"Foundational Machine Learning course by Andrew Ng",
 			"default_item":false
-		}
-
+		},
 		{
 			"type":"Study",
 			"institution":"Deep Learning",
