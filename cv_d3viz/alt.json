@@ -35,7 +35,7 @@
 			"title":"Data Scientist",
 			"from":"2017-07-19",
 			"to":null,
-			"description":"I am a data scientist",
+			"description":"I am a data scientist at booking.com",
 			"default_item":true
 		}
 	],
@@ -65,6 +65,26 @@
 			"from":"2013-09-01",
 			"to":"2017-11-03",
 			"description":"Development of state-of-the-art, high-resolution global circulation models to study the impact of large submarine landslides on the ocean circulation, particularly in the Arctic Ocean.",
+			"default_item":false
+		}
+
+		{
+			"type":"Study",
+			"institution":"Machine Learning",
+			"title":"Stanford University on Coursera",
+			"from":"2016-03-01",
+			"to":"2016-06-01",
+			"description":"Foundational Machine Learning course by Andrew Ng",
+			"default_item":false
+		}
+
+		{
+			"type":"Study",
+			"institution":"Deep Learning",
+			"title":"Stanford University on Coursera",
+			"from":"2017-10-01",
+			"to":"2018-06-01",
+			"description":"5 Course Machine learning specialization by Andrew Ng, using Python, Tensorflow and Keras",
 			"default_item":false
 		}
 	]
