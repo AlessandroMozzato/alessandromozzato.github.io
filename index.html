@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
@@ -13,21 +14,20 @@
 	<style>
 		body {	
 			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
-		    font: 20px Arvo;
+		    font: 16px/24px 'opensans-regular';
 		    line-height: 1.8;
 		    color: #f5f6f7;
 		}
 
 		p {
-			font-size: 16px;		
+		    font: 16px/24px 'opensans-regular';
 		}
 
 		.margin {margin-bottom: 45px;}
 
-
 		.bg-1 {
 			background-color: #87bdd8; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
-			color: #ffffff;
+		    color: #ffffff; /* White */
 		}
 
 		.bg-2 {
@@ -56,11 +56,12 @@
 		    border: 0;
 		    border-radius: 0;
 		    margin-bottom: 0;
-		    font-size: 12px;
+		    font: 12px/18px 'opensans-bold';
 		    letter-spacing: 5px;
 		}
 
 		.navbar-nav li a:hover {
+		    font: 12px/18px 'opensans-bold';
 		    color: #1abc9c !important;
 		}
 	</style>
@@ -86,7 +87,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#bg1">WHO</a></li>
-        <li><a href="#bg2">VITAE</a></li>
+        <li><a href="resume.html">VITAE</a></li>
+        <li><a href="#bg2">TIMELINE</a></li>       
         <li><a href="#bg3">PROJECTS</a></li>
         <li><a href="#bg4">CONTACTS</a></li>
       </ul>
@@ -96,11 +98,9 @@
 
 <!-- This is the first part, with the picture and name-->
 <div class="container-fluid bg-1 text-center" id="bg1">
-	<h3>Alessandro Mozzato</h3>
-	<img src="profile.jpeg" class="img-responsive img-circle" style="display:inline" alt="My profile pic">
-	<h3>Data Scientist</h3>
-	<p>Data scientist with a strong mathematical background and extensive
-experience in numerical modelling</p>
+	<h3 style="color: #ffffff;">Alessandro Mozzato</h3>
+	<img src="images/profile.jpeg" class="img-responsive img-circle" style="display:inline" alt="My profile pic">
+	<h3 style="color: #ffffff;">Data Scientist</h3>
 </div>
 
 <!-- Second one with the links -->
@@ -108,6 +108,7 @@ experience in numerical modelling</p>
 	<h3>Vitae</h3>
 	<p><a href="CV_html/index1.html">Vitae</a></p>
 	<p><a href="cv_d3viz/index.html">Visual CV</a></p>
+	<p><a href="resume.html">Vitae 2</a></p>
 	<!-- <p><a href="myd3project/index.html">D3play</a></p> -->
 
 </div>

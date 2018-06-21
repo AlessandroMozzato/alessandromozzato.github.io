@@ -1,0 +1,3 @@
+Example use of rasterize to create pdf:
+
+phantomjs rasterize.js https://dmitrybaranovskiy.github.io/raphael/polar-clock.html cock.png
