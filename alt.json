@@ -1,0 +1,89 @@
+{
+	"experience":[
+		{
+			"type":"Work",
+			"institution":"Inria",
+			"title":"Software Researcher - Internship",
+			"from":"2013-04-01",
+			"to":"2013-06-30",
+			"description":"Development and validation of mesh adaptive techniques for fluid dynamics problems.",
+			"default_item":false
+		},
+		{
+			"type":"Work",
+			"institution":"IZSV",
+			"title":"Data Scientist - Consultant",
+			"from":"2016-01-01",
+			"to":"2016-09-30",
+			"description":"Application of machine learning techniques to develop ecological models to predict \n species diffusion and virus spreading using meteorological and environmental data.",
+			"default_item":false
+		}
+		,
+		{
+			"type":"Work",
+			"institution":"Enel",
+			"title":"Data Scientist",
+			"from":"2016-10-01",
+			"to":"2017-05-30",
+			"description":"Anomaly detection algorithms for plant monitoring, Predictive maintenance \n models for detection of faults in energy generation plants, Web UI for live validation of machine learning algorithms.",
+			"default_item":false
+		}
+		,
+		{
+			"type":"Work",
+			"institution":"Booking.com",
+			"title":"Data Scientist",
+			"from":"2017-07-19",
+			"to":null,
+			"description":"I am a data scientist at booking.com",
+			"default_item":true
+		}
+	],
+	"study":[
+		{
+			"type":"Study",
+			"institution":"University of Padova",
+			"title":"B.A. Mathematics",
+			"from":"2008-09-01",
+			"to":"2011-07-20",
+			"description":"Final Thesis: The Exponential Radon Transform",
+			"default_item":false
+		},
+		{
+			"type":"Study",
+			"institution":"University of Padova",
+			"title":"M.Sc. Applied Mathematics",
+			"from":"2011-10-01",
+			"to":"2013-07-20",
+			"description":"Final Thesis: A mesh adaptive algorithm for numerical incompressible Navier-Stokes equations",
+			"default_item":false
+		},
+		{
+			"type":"Study",
+			"institution":"National Oceanography Centre - University of Southampton",
+			"title":"Doctor of Philosophy",
+			"from":"2013-09-01",
+			"to":"2017-11-03",
+			"description":"Development of state-of-the-art, high-resolution global circulation \n models to study the impact of large submarine landslides on the ocean circulation, particularly in the Arctic Ocean.",
+			"default_item":false
+		},
+		{
+			"type":"Study",
+			"institution":"Machine Learning",
+			"title":"Stanford University on Coursera",
+			"from":"2016-03-01",
+			"to":"2016-06-01",
+			"description":"Foundational Machine Learning course by Andrew Ng",
+			"default_item":false
+		},
+		{
+			"type":"Study",
+			"institution":"Deep Learning",
+			"title":"Stanford University on Coursera",
+			"from":"2017-10-01",
+			"to":"2018-06-01",
+			"description":"5 Course Machine learning specialization by Andrew Ng, using Python, Tensorflow and Keras",
+			"default_item":false
+		}
+	]
+}
