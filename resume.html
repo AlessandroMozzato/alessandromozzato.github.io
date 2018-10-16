@@ -19,6 +19,7 @@
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
 
@@ -246,6 +247,36 @@
                   <li><span class="bar-expand webdevelopment"></span><em>Web Development</em></li>
                </ul>
 
+
+<!-- <div id="skills" class="col-md-5 col-centered">
+   <ul class="skills">
+      <li><div class="skillbar clearfix" data-percent="60%">
+      <div class="skillbar-bar" style="background: #131313;"><em>Machine Learning</em></div>
+      </div></li>
+</div>
+      <div class="skillbar  " data-percent="95%">
+  <div class="skillbar-title" style="background: #131313;"><span>Photography</span></div>
+  <div class="skillbar-bar" ></div>
+  <div class="skill-bar-percent">95%</div>
+</div> -->
+
+
+            <script>
+               var skillsDiv = $('#skills');
+
+               $(window).on('scroll', function(){
+                  var winT = $(window).scrollTop(),
+                  winH = $(window).height(),
+                  skillsT = skillsDiv.offset().top;
+                 if(winT + winH  > skillsT){
+                  $('.skillbar').each(function(){
+                     $(this).find('.skillbar-bar').animate({
+                       width:$(this).attr('data-percent')
+                     },2000);
+                   });
+                 }
+               });
+            </script>
             </div><!-- end skill-bars -->
 
          </div> <!-- main-col end -->
