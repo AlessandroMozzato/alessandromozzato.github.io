@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Alessandro's Research</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+		body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif;}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+		}		
+
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 16px/24px;
+		    line-height: 1.8;
+		    height: 100%;
+		    color: #777;
+		    position: relative;
+			font-weight: 400;
+		    line-height: 1.8;
+		}
+
+		p {
+		    font: 16px/24px;
+			text-align: justify;
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+
+		a {
+			color: hsl(330, 50%, 50%);
+
+			&:hover {
+				color: hsl(334, 62%, 30%);
+			}
+		}
+
+		div {
+			margin: 0.5rem;
+			padding: 0 1rem;
+
+			@include bp('large') {
+				@supports (display: flex) {
+					flex: 0 0 calc(25% - 3rem);
+				}		
+			}
+
+			&:hover {
+				background-color: hsl(347, 12%, 98%);
+			}
+		}
+
+		.page-title {
+			color: hsl(320, 60%, 30%);
+			font-size: 24px/32px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 1rem auto;
+			margin-bottom: 50px;
+			margin-top: 50px;
+			max-width:  calc(70rem + .25vw);
+			text-align: center;
+		}
+
+		.post-title {
+			font-weight: 400;
+			line-height: 1.3;
+			margin-bottom: 10px;
+			margin-top: 10px;	
+		}
+
+		.bg-1 {
+			background-color: #a2b9bc; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #555555;
+		}
+
+		.bg-2 {
+		    background-color: #b2ad7f; /* Dark Blue */
+		    color: #555555;
+		}
+		
+		.bg-3 {
+	        background-color: #878f99; /* White */
+           	color: #ffffff;
+		}
+
+		.bg-4 {
+	    	background-color: #6b5b95; /* black */
+	    	color: #ffffff;
+		}
+
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+	</style>
+</head>
+
+<!-- This is the first part, with the picture and name-->
+<div class="container-fluid bg-1 text-center" id="bg1">
+		
+	<p>
+		Cara Myriam,
+	</p>
+	<p>
+		oggi e’ il nostro anniversario, secondo il mio modo di calcolare! Sono passati 5 mesi dal nostro primo appuntamento, dalla prima volta che ti ho vista, dalla prima volta che ti ho baciata, dalla prima volta che mi hai invitato (circa) a dormire a casa tua. Dalla prima volta che mi sono svegliato al tuo fianco. 
+		Questi mesi sono al contempo passati velocissimi e pianissimo. Mi sembra sia ieri al Festina Lente ma mi sembra di conoscerti da una vita. Forse e’ la bubble che mi ci ha avvicinati così tanto e mi fa sentire così vicini, ma io non ci credo tanto alla bubble. Io credo sarebbe successo comunque, quasi allo stesso modo, con qualche viaggio in più, qualche ristorante in più, qualche bevuta sul ponte in meno, qualche dancing party in casa in meno, forse gli stessi pain au choc. Ma insomma, sempre qui. 
+	</p>
+	<p>
+		Qui ad essere innamorato di te. 
+	</p>
+	<p>
+		Ti amo perchè sei generosa. Perché dai tutto per le persone a cui vuoi bene. Perché credi nelle persone e le vedi sempre dal verso positivo. Perché vedi tutte le cose dal verso positivo. 
+		Ti amo perché’ mi accetti per come sono, con le mie stranezze, i miei difetti e i miei pregi (so che stai ridendo di questa lettera online).
+	</p>
+	<p>
+		Ti amo perché mi fai essere un uomo migliore, mi incoraggi a essere la migliore versione di me stesso. Mi martelli per scrivere a mia sorella, ai miei amici, a mio papa’. Mi hai insegnato a regalare i fiori, mi fai scrivere lettere d’amore, mi fai essere cheesy come i telefilm che mi piacciono tanto. Con te sento di poter essere un uomo migliore e sento di esserlo ogni giorno un po’ di più al tuo fianco.
+	</p>
+	<p>
+		Ti amo perché so che abbiamo solo cominciato (dopotutto non siamo insieme 5 mesi ma da 1!!!) e vedo davanti a noi mille avventure, pain au choc, hot yoga, Kafta w Batata, e soprattutto tanto amore.
+		Spero di poterti rendere felice tanto e più di quanto tu mi rendi felice e di scriverti altre mille di queste lettere.
+	</p>
+	<p>
+		Tuo,
+	</p>
+	<p>
+		Alessandro
+	</p>
+</div>
+
+</body>
+</html>
+
+
+
+
