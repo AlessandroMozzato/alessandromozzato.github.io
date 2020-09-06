@@ -1,17 +1,146 @@
-Cara Myriam,
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lettera</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 
-altri mesi sono passati, adesso sono 9. In questi ultimi due mesi è successo e ci è successo di tutto, l'altra lettera sembra veramente di una vita fa. 
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
-In questi mesi pero' ho capito e imparato tante nuove cose su di te, me, e su di noi.
+		body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif;}
 
-Ho capito che ti amo sempre di piu Piu passo il tempo con te e piu sento di amarti sempre di piu
+		main {
+			display: flex;
+			flex-wrap: wrap;
+		}		
 
-Ho capito che voglio vedere il mondo con te
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 16px/24px;
+		    line-height: 1.8;
+		    height: 100%;
+		    color: #777;
+		    position: relative;
+			font-weight: 400;
+		    line-height: 1.8;
+		}
 
-Hp capito che non voglio stare lontanpo da te
+		p {
+		    font: 16px/24px;
+			text-align: justify;
+			margin-left: 25%;
+			margin-right: 25%;
+		}
 
-Ho capito che voglio vivere con te, e questa e' la ia proposta ufficiale
+		a {
+			color: hsl(330, 50%, 50%);
 
-Tuo,
-Alessandro
+			&:hover {
+				color: hsl(334, 62%, 30%);
+			}
+		}
 
+		div {
+			margin: 0.5rem;
+			padding: 0 1rem;
+
+			@include bp('large') {
+				@supports (display: flex) {
+					flex: 0 0 calc(25% - 3rem);
+				}		
+			}
+
+			&:hover {
+				background-color: hsl(347, 12%, 98%);
+			}
+		}
+
+		.page-title {
+			color: hsl(320, 60%, 30%);
+			font-size: 24px/32px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 1rem auto;
+			margin-bottom: 50px;
+			margin-top: 50px;
+			max-width:  calc(70rem + .25vw);
+			text-align: center;
+		}
+
+		.post-title {
+			font-weight: 400;
+			line-height: 1.3;
+			margin-bottom: 10px;
+			margin-top: 10px;	
+		}
+
+		.bg-1 {
+			background-color: #a2b9bc; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #555555;
+		}
+
+		.bg-2 {
+		    background-color: #b2ad7f; /* Dark Blue */
+		    color: #555555;
+		}
+		
+		.bg-3 {
+	        background-color: #878f99; /* White */
+           	color: #ffffff;
+		}
+
+		.bg-4 {
+	    	background-color: #6b5b95; /* black */
+	    	color: #ffffff;
+		}
+
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+	</style>
+</head>
+
+<!-- This is the first part, with the picture and name-->
+<div class="container-fluid bg-1 text-center" id="bg1">
+		
+	<p>
+		Cara Myriam,
+	</p>
+	<p>
+		Altri mesi sono passati, adesso sono nove. In questi ultimi tre mesi dalla mia ultima lettera è successo e ci è successo di tutto, cose belle e cose brutte, ma noi siamo ancora qui.
+	</p>
+	<p>
+		In questi mesi pero' ho capito e imparato tante nuove cose su di te, su di me, e su di noi.
+	</p>
+	<p>
+		Ho capito che ti amo sempre di più. Che più passa il tempo e più sto bene con te e ti immagino al mio fianco. Che voglio stre a tuo fianco nel bene e nel male.
+	</p>
+	<p>
+		Ho capito che andare in vacanza e viaggiare con te mi piace tantissimo, nonostante le tue paure iniziali. Ho capito che stiamo benissimo insieme anche fuori casa, anche in giro per il mondo, addirittura a casa mia a Padova. Ho capito che voglio vedere tante altre cose con te, a cominciare da Parigi, da Bilbao, e poi chissà.
+	</p>
+	<p>
+		Hp capito che non voglio stare lontano da te. Che voglio esserti a fianco ogni giorno, vederti ogni sera, cenare con te, raccontarti la mia giornata e sentire la tua. Guardare la tv e vederti svenire vicino a me., baciarti prima di andare a letto e baciarti alla mattina appena svegli, appena tu sei sveglia in realtà.
+	</p>
+	<p>
+		Ho capito che voglio vivere con te, e questa e' la mia proposta ufficiale.
+	</p>
+	<p>
+		Ti amo sempre di più.
+	</p>
+	<p>
+		Tuo,
+	</p>
+	<p>
+		Alessandro
+	</p>
+</div>
+
+</body>
+</html>
