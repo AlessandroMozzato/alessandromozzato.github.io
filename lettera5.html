@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lettera</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+		body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif;}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+		}		
+
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 16px/24px;
+		    line-height: 1.8;
+		    height: 100%;
+		    color: #777;
+		    position: relative;
+			font-weight: 400;
+		    line-height: 1.8;
+		}
+
+		p {
+		    font: 16px/24px;
+			text-align: justify;
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+
+		a {
+			color: hsl(330, 50%, 50%);
+
+			&:hover {
+				color: hsl(334, 62%, 30%);
+			}
+		}
+
+		div {
+			margin: 0.5rem;
+			padding: 0 1rem;
+
+			@include bp('large') {
+				@supports (display: flex) {
+					flex: 0 0 calc(25% - 3rem);
+				}		
+			}
+
+			&:hover {
+				background-color: hsl(347, 12%, 98%);
+			}
+		}
+
+		.page-title {
+			color: hsl(320, 60%, 30%);
+			font-size: 24px/32px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 1rem auto;
+			margin-bottom: 50px;
+			margin-top: 50px;
+			max-width:  calc(70rem + .25vw);
+			text-align: center;
+		}
+
+		.post-title {
+			font-weight: 400;
+			line-height: 1.3;
+			margin-bottom: 10px;
+			margin-top: 10px;	
+		}
+
+		.bg-1 {
+			background-color: #a2b9bc; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #555555;
+		}
+
+		.bg-2 {
+		    background-color: #b2ad7f; /* Dark Blue */
+		    color: #555555;
+		}
+		
+		.bg-3 {
+	        background-color: #878f99; /* White */
+           	color: #ffffff;
+		}
+
+		.bg-4 {
+	    	background-color: #6b5b95; /* black */
+	    	color: #ffffff;
+		}
+
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+	</style>
+</head>
+
+<!-- This is the first part, with the picture and name-->
+<div class="container-fluid bg-1 text-center" id="bg1">
+		
+	<p>
+		Cara Myriamina,
+	</p>
+	<p>
+    E' da tanto che non ti scrivo una lettera, un po' troppo! Mi viene da scriverti sempre quando siamo lontani, forse non sono il massimo a parlare al telefono ma almeno mi faccio un po' perdonare.
+	</p>
+	<p>
+    Ormai e' quasi un anno che siamo sposati, e' volato, cosi tante cose sono cambiate ma noi siamo rimasti sempre uguali, anzi forse adesso stiamo ancora meglio. La vita insieme a te e' leggera, forse non restera' sempre cosi semplice ma mi piace che almeno adesso sia cosi, e penso che partiamo da una bellissima base per il nostro futuro, e non vedo l'ora di viverlo con te. 
+  </p>
+	<p>
+    Mi piace come ci troviamo insieme, come ci piace passare il tempo insieme, come siamo sempre tristi anche per un giorno che non siamo insieme. Spero che saremo sempre cosi e ti prometto di impegnarmi e fare tutto quello che posso perche' rimanga sempre cosi.
+  </p>
+  <p>
+    Non vedo l'ora ti rivederti. Ti amo ogni giorno di piu'.
+	</p>
+	<p>
+		Tuo per sempre,
+	</p>
+	<p>
+		Alessandro
+	</p>
+  
+</div>
+
+</body>
+</html>
