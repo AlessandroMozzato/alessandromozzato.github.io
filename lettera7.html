@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lettera</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+		body,h1,h2,h3,h4,h5,h6,p {font-family: "Open Sans", sans-serif;}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+		}		
+
+		body {	
+			/*Fonts here: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html */
+		    font: 16px/24px;
+		    line-height: 1.8;
+		    height: 100%;
+		    color: #777;
+		    position: relative;
+			font-weight: 400;
+		    line-height: 1.8;
+		}
+
+		p {
+		    font: 16px/24px;
+			text-align: justify;
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+
+		a {
+			color: hsl(330, 50%, 50%);
+
+			&:hover {
+				color: hsl(334, 62%, 30%);
+			}
+		}
+
+		div {
+			margin: 0.5rem;
+			padding: 0 1rem;
+
+			@include bp('large') {
+				@supports (display: flex) {
+					flex: 0 0 calc(25% - 3rem);
+				}		
+			}
+
+			&:hover {
+				background-color: hsl(347, 12%, 98%);
+			}
+		}
+
+		.page-title {
+			color: hsl(320, 60%, 30%);
+			font-size: 24px/32px;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 1rem auto;
+			margin-bottom: 50px;
+			margin-top: 50px;
+			max-width:  calc(70rem + .25vw);
+			text-align: center;
+		}
+
+		.post-title {
+			font-weight: 400;
+			line-height: 1.3;
+			margin-bottom: 10px;
+			margin-top: 10px;	
+		}
+
+		.bg-1 {
+			background-color: #a2b9bc; /* palettes from: https://www.w3schools.com/colors/colors_palettes.asp */
+			color: #555555;
+		}
+
+		.bg-2 {
+		    background-color: #b2ad7f; /* Dark Blue */
+		    color: #555555;
+		}
+		
+		.bg-3 {
+	        background-color: #878f99; /* White */
+           	color: #ffffff;
+		}
+
+		.bg-4 {
+	    	background-color: #6b5b95; /* black */
+	    	color: #ffffff;
+		}
+
+		.container-fluid {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+	</style>
+</head>
+
+<!-- This is the first part, with the picture and name-->
+<div class="container-fluid bg-1 text-center" id="bg1">
+		
+	<p>
+		Cara Myriamina,
+	</p>
+  <p>
+    E' passato molto tempo dall'ultima lettera, lì avevamo appena saputo di Vitto, e adesso!!! 
+	</p>
+  <p>
+    E' cambiato tutto nel mentre, ma sono felice e orgoglioso di noi, del nostro rapporto, del nostro matrimonio e della nostra famiglia. 
+    Sono orgoglioso di vedere come abbiamo affrontato tutti questi cambiamenti e penso che siamo stati bravi, penso che stiamo crescendo un bambino speciale.
+    Abbiamo avuto un po' di alti e bassi ma sono contento di come siamo stati uniti, siamo sempre riusciti a scherzarci su, a sostenerci e trovare un modo, sempre. 
+    Penso che siamo piu' forti di prima e piu' uniti ancora. 
+  </p>
+  <p>
+    Vederti diventare mamma e' stato meraviglioso e vedere come ti prendi cura di Vitto e' bellissimo. 
+    Vicino a te sento e so di poter essere un bravo papa' anche se devo ancora lavorare molto! 
+    Grazie per esserci sempre.
+  </p>  
+  
+  <p>Ti amo, sempre piu' di tutto,
+    o seconda piu' di tutto.</p>
+  <p>A</p>
+
+  
+</div>
+
+</body>
+</html>
