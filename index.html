@@ -18,6 +18,23 @@
   	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
   	<script type="text/javascript" src="d3resume.js"></script>
 
+	<script>
+	  // Initialize the agent on page load.
+	  const fpPromise = import('https://fpjscdn.net/v3/pGmMNNlxLh0TbKAaUAZp')
+	    .then(FingerprintJS => FingerprintJS.load({
+	      region: "eu"
+	    }))
+	
+	  // Get the visitorId when you need it.
+	  fpPromise
+	    .then(fp => fp.get())
+	    .then(result => {
+	      const visitorId = result.visitorId
+	      console.log(visitorId)
+	    })
+	</script>
+	
+
   	<!-- <script type="text/javascript" src="https://rawgithub.com/glena/d3-resume/master/d3resume.min.js"></script> -->
 
 	<style>
